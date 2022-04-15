@@ -1,0 +1,18 @@
+<form [formGroup]="form" class="converter_wrapper">
+    <div class="converter_block">
+        <select class="converter_select" [formControl]="from">
+            <option *ngFor="let currency of currencies" [value]="currency.rate">
+                {{currency.cc + currency.txt}}
+            </option>
+        </select>
+        <input class="input_view" type="number" [formControl]="valueFrom"/>
+    </div>
+    <div class="converter_block">
+        <select class="converter_select" [formControl]="to">
+            <option *ngFor="let currency of currencies" [value]="currency.rate">
+            {{currency.cc + currency.txt}}
+            </option>
+        </select>
+        <input class="input_view" type="number" [formControl]="valueTo"/>
+    </div>
+</form>

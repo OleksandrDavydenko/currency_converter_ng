@@ -1,0 +1,17 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+.App_header_wrapper {
+    width: 100%;
+}
+.App_currenciesExchanges_wrapper {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
